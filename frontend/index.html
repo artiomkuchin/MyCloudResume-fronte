@@ -15,24 +15,70 @@
     <link type="text/css" rel="stylesheet" href="./css/fonts.css">
     <link type="text/css" rel="stylesheet" href="./css/katex.min.css">
     <link type="text/css" rel="stylesheet" href="./css/tabs.css">
+
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5a5a5a;
+        --link-color: #268bd2;
+        --date-color: #515151;
+        --code-color: #bf616a;
+        --code-background-color: #f9f9f9;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #eee;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9d9d9d;
+        --link-color: #268bd2;
+        --date-color: #9a9a9a;
+        --code-color: #ff7f7f;
+        --code-background-color: #393D47;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+    </style>
+
 </head>
 
 <body class="dark-theme">
-<aside class="sidebar">
-    <div class="container sidebar-sticky">
-        <div class="sidebar-about">
-            <h1 class="brand"><a><h1>Artiom Kuchin</h1></a></h1>
-            <p class="lead">Cloud Engineer</p>
+    <aside class="sidebar">
+        <div class="container sidebar-sticky">
+            <div class="light-dark" align="right">
+                <button class="btn-light-dark">🌙☀️</button>
+            </div>
+
+            <div class="sidebar-about">
+                <h1 class="brand">
+                    <a><img src="./images/brand_image.jpg" alt="brand image"></a>
+                    <a><h1>Artiom Kuchin</h1></a>
+                </h1>
+                <p class="lead">Cloud Engineer</p>
+            </div>
+
+            <nav><ul class="sidebar-nav"></ul></nav>
+
+            <div>
+                <a target="_blank" class="social" href="https://github.com/artiomkuchin">GitHub</a>
+                <a target="_blank" class="social" href="https://www.linkedin.com/in/artiomkuchin/">LinkedIn</a>
+                <h4><span id='views'>Views:</span> <span id="visits"></span></h4>
+            </div>
         </div>
-        <nav><ul class="sidebar-nav"></ul></nav>
-        <div><a target="_blank" class="social" href="https://github.com/artiomkuchin">GitHub</a>
-        <a target="_blank" class="social" href="https://www.linkedin.com/in/artiomkuchin/">LinkedIn</a></div>
-    </div>
-</aside>
+    </aside>
 
 <main class="content container">
 <div class="post">
-
 <section id="about">
 <h1>About Me</h1>
 <p>Hello, my name is Artiom! I have over 5 years of professional experience in IT, including the last 2 years focused on cloud operations and DevOps. I’m passionate about designing secure, resilient, and scalable cloud infrastructure.</p>
@@ -94,17 +140,15 @@
 <li>Automation: Python, Bash</li>
 <li>Incident Management: Jira, Opsgenie</li>
 </ul>
-
 </div>
 </main>
 
-<script src="./js/views.js"></script>
-<script src="./js/light_dark.js"></script>
-<script src="./js/tabs.js"></script>
-<script src="./js/katex.min.js"></script>
-<script src="./js/auto-render.min.js"></script>
-<script src="./js/katex.js"></script>
-<script src="./js/toc.js"></script>
-
+<script defer src="./js/views.js"></script>
+<script defer src="./js/light_dark.js"></script>
+<script defer src="./js/tabs.js"></script>
+<script defer src="./js/katex.min.js"></script>
+<script defer src="./js/auto-render.min.js"></script>
+<script defer src="./js/katex.js"></script>
+<script defer src="./js/toc.js"></script>
 </body>
 </html>
